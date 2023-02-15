@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El club viejuner</title>
+
+<style>
+
+#sobreti {
+    resize: none;
+    background-color: lightgray;
+}
+form {
+    width: 75%;
+}
+
+fieldset {
+background-color: bisque;
+}
+
+#circustancias {
+background-color: blue;
+}
+
+fieldset#circustancias{
+background-color: red;
+}
+input {
+    background-color: aquamarine;
+}
+
+.red  {
+    background-color: blueviolet;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+</style>
+
+</head>
+<body>
+    <form action="#" method="get" >
+        <fieldset>
+            <legend>Tú</legend>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+            <br>
+
+
+            <label for="lastname">Apellidos</label>
+            <input type="text" name="lastname" id="lastname">
+            <br>
+
+            <label for="age">Años</label>
+            <input type="number" name="age" id="age" min="18" max="99">
+            <br>
+
+            <label for="sexo">Sexo</label>
+            <input type="radio" name="sexo2" id="sexo1" value="si">Si
+            <input type="radio" name="sexo2" id="sexo2" value="no">No
+            <br>
+
+            <label for="viejuner">¿Eres viejuner?</label>
+            <input type="checkbox" name="viejuner" id="viejuner" value="si">Si
+            <br>
+
+            <label class="red bold" for="sobreti">Sobre ti</label>
+            <textarea class="red" name="sobreti" id="sobreti" cols="30" rows="10"></textarea>
+            <br>
+
+        <fieldset>
+            <legend id="circustancias">Tus Circustancias</legend>
+            <label for="mail">Correo</label>
+            <input type="email" name="mail" id="mail">
+            <br>
+            <label for="telefono">teléfono</label>
+            <input type="tel" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" >
+
+
+        </fieldset>
+
+
+
+
+        </fieldset>
+            <br>
+        
+        <button type="submit">Summit</button>
+    </form>
+
+
+
+</body>
+</html>
